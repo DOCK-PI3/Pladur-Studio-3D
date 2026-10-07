@@ -52,12 +52,6 @@ Cada pieza es un volumen rectangular terminado. Su superficie bruta es `2 × (an
 
 Las caras de contacto no se descuentan y los módulos no se fusionan. La decoración no se cuenta. El grosor del conjunto no es el espesor de la placa comercial. El resultado sirve para una estimación conceptual; no calcula placas, cortes optimizados, perfiles, tornillos, cargas ni estructura. El CSV contiene tamaños de volúmenes terminados, no planos de corte de placas.
 
-## Publicar en GitHub Pages
-
-1. Crea un repositorio en tu cuenta y sube estos archivos, incluyendo `package-lock.json` y `.github/workflows/deploy.yml`. No subas `node_modules`, `dist`, caches ni capturas de pruebas.
-2. En **Settings → Pages → Build and deployment**, selecciona **GitHub Actions** como Source.
-3. El workflow comprueba las pruebas y el build y publica al hacer push a `main`, o manualmente desde Actions. Si tu rama principal tiene otro nombre, ajusta `branches` en el workflow.
-4. La URL publicada aparece en el job de despliegue y en Settings → Pages.
 
 Vite usa base relativa `./`, compatible con el subdirectorio del repositorio. No necesita backend, claves ni servicios externos. Los datos de proyectos se guardan en el navegador de cada usuario, no en GitHub. La publicación remota requiere tu repositorio y acceso a tu cuenta; el proyecto local queda listo para ese paso.
 
@@ -65,8 +59,6 @@ Referencias: [despliegue estático de Vite](https://vite.dev/guide/static-deploy
 
 ## Documentación
 
-- [PLAN.md](PLAN.md): fases, decisiones confirmadas y criterios.
-- [SPECDEV.md](SPECDEV.md): arquitectura, datos, cálculo, validación y alcance.
 - [VALIDACION.md](VALIDACION.md): comprobaciones realizadas y límites.
 
 React, TypeScript, Vite, Three.js y Lucide. Assets geométricos propios generados por código. Versión 0.2; conserva el formato JSON v1 de los proyectos originales.
